@@ -1,0 +1,74 @@
+[
+    {
+        "id": "p01",
+        "text": "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate."
+    },
+    {
+        "id": "p02",
+        "text": "A vendor's regular payment or bank account details suddenly change, often with a message claiming they've switched banks."
+    },
+    {
+        "id": "p03",
+        "text": "A new vendor has a generic, forgettable name paired with a domain that was registered only days or weeks ago."
+    },
+    {
+        "id": "p04",
+        "text": "A vendor's name is nearly identical to an established, well-known company, differing by a word, abbreviation, or spelling."
+    },
+    {
+        "id": "p05",
+        "text": "No business registration, filing, or public record can be found for a vendor claiming to be an established company."
+    },
+    {
+        "id": "p06",
+        "text": "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts."
+    },
+    {
+        "id": "p07",
+        "text": "A payment request comes with pressure to act quickly, discouraging the normal review or approval process."
+    },
+    {
+        "id": "p08",
+        "text": "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms."
+    },
+    {
+        "id": "p09",
+        "text": "A caller or email claims to be 'confirming' or 'verifying' an existing order as a pretext to establish false legitimacy before billing."
+    },
+    {
+        "id": "p10",
+        "text": "A message impersonates a government agency or licensing authority, threatening fines or service loss unless a fee is paid immediately."
+    },
+    {
+        "id": "p11",
+        "text": "A request comes from a vendor's real, previously legitimate email account, but the account itself has been compromised by an attacker."
+    },
+    {
+        "id": "p12",
+        "text": "A vendor overpays and asks for the difference to be returned, using a check that later turns out to be fraudulent."
+    },
+    {
+        "id": "p13",
+        "text": "An invoice closely resembles a vendor's past legitimate invoices but has slightly altered payment or account details."
+    },
+    {
+        "id": "p14",
+        "text": "A vendor or requester pressures staff to bypass the company's normal invoice-approval procedures for this one payment."
+    },
+    {
+        "id": "p15",
+        "text": "An invoice's amount or line items don't match what was actually ordered or received from that vendor."
+    },
+    {
+        "id": "p16",
+        "text": "A vendor's contact information (phone, email, or mailing address) changed recently with no clear prior notice."
+    },
+    {
+        "id": "p17",
+        "text": "A request combines urgency with a threat, such as legal action or service interruption, if payment isn't made right away."
+    },
+    {
+        "id": "p18",
+        "text": "A vendor relationship that was publicly known (e.g. mentioned on the company's own website) is targeted, suggesting the requester specifically researched who to impersonate."
+    }
+]
