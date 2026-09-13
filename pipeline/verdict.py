@@ -1,9 +1,9 @@
 import os
+import requests
 from dotenv import load_dotenv
-from litellm import completion
 from pipeline.rag import get_matching_patterns
 
-load_dotenv()
+load_dotenv(override=True)
 
 
 def get_verdict(vendor_name: str, detail: str, tavily_findings: list = None) -> dict:
@@ -29,11 +29,19 @@ RISK: <Low, Medium, or High>
 REASON: <one sentence citing specific evidence above>
 """
 
-    response = completion(
-        model="anthropic/claude-sonnet-4-6",
-        messages=[{"role": "user", "content": prompt}],
+    response = requests.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        headers={
+            "Authorization": f"Bearer {os.getenv('GROQ_API_KEY')}",
+            "Content-Type": "application/json",
+        },
+        json={
+            "model": "openai/gpt-oss-20b",
+            "messages": [{"role": "user", "content": prompt}],
+        },
     )
-    text = response["choices"][0]["message"]["content"]
+    response.raise_for_status()
+    text = response.json()["choices"][0]["message"]["content"]
 
     risk, reason = "Medium", text.strip()
     for line in text.splitlines():
