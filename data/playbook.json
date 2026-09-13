@@ -1,0 +1,82 @@
+[
+  {
+    "id": "bank_change",
+    "title": "Vendor bank details changed",
+    "search_query": "vendor bank account change request business email compromise payment fraud warning",
+    "search_keywords": ["business email compromise", "bank account", "vendor"],
+    "how": "A real vendor's email is hacked or spoofed, and a message says they've switched banks. The next invoice looks normal, but the money goes to the criminal's account. Onboarding checks pass because the vendor is real.",
+    "case": {
+      "headline": "Toyota Boshoku lost $37M (2019)",
+      "detail": "Attackers persuaded an employee with financial authority to change the bank details on a transfer.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/over-37-million-lost-by-toyota-boshoku-subsidiary-in-bec-scam/"
+    },
+    "fact": {
+      "text": "The FBI advises confirming any change to a vendor's bank details through a contact you already have on file, not one given in the email.",
+      "source": "FBI IC3",
+      "url": "https://www.ic3.gov/CrimeInfo/BEC"
+    }
+  },
+  {
+    "id": "lookalike",
+    "title": "Look-alike vendor",
+    "search_query": "business email compromise spoofed domain impersonating legitimate company fraudulent invoices vendors",
+    "search_keywords": ["invoice", "vendor", "supplier"],
+    "how": "Criminals register a company or web domain with almost the same name as a supplier you already pay, then send invoices from it. A registry search finds a real company, so the check passes.",
+    "case": {
+      "headline": "Facebook and Google lost $122M (2013-2015)",
+      "detail": "A scammer set up a company with the same name as Quanta Computer, a real supplier to both, and sent them fake invoices.",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2019/03/27/phishing-email-scam-stole-100-million-from-facebook-and-google.html"
+    },
+    "fact": {
+      "text": "FBI example of a spoofed domain: @company.com becomes @co-pany.com.",
+      "source": "FBI IC3 PSA",
+      "url": "https://www.ic3.gov/PSA/2023/PSA230324"
+    }
+  },
+  {
+    "id": "exec_pressure",
+    "title": "Boss pressure and payment bursts",
+    "search_query": "business email compromise CEO impersonation urgent confidential wire transfer scam warning",
+    "search_keywords": ["business email compromise", "ceo", "executive"],
+    "how": "An urgent, confidential request appears to come from the CEO or CFO, sometimes backed by a call or video meeting. Several large payments go to new payees before anyone double-checks.",
+    "case": {
+      "headline": "Arup lost $25M (2024)",
+      "detail": "A Hong Kong employee made 15 transfers to 5 bank accounts after a video call in which every colleague was a deepfake.",
+      "source": "CNN",
+      "url": "https://www.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk"
+    },
+    "fact": {
+      "text": "74% of US organisations were hit by business email compromise in 2025.",
+      "source": "AFP 2026 survey",
+      "url": "https://www.financialprofessionals.org/about/learn-more/press-releases/Details/over-75-percent-of-us-firms-experienced-payments-fraud-in-2025-while-ai-adoption-for-fraud-mitigation-lags"
+    }
+  },
+  {
+    "id": "fake_invoice",
+    "title": "Fake, duplicate or inflated invoice",
+    "search_query": "billing scheme fraud duplicate invoices fictitious invoices accounts payable red flags",
+    "search_keywords": ["invoice", "billing"],
+    "how": "An invoice arrives for work that never happened, reuses a real invoice number so a second copy slips through, or bills far more than usual. The vendor itself may look fine.",
+    "case": null,
+    "fact": {
+      "text": "Business email compromise cost US businesses $3.05B in 2025, about $123k per complaint, and 86% of it went out by wire or ACH.",
+      "source": "FBI IC3 2025 report",
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf"
+    }
+  },
+  {
+    "id": "insider",
+    "title": "Insider paying themselves",
+    "search_query": "employee sentenced embezzlement fictitious vendor shell company fake invoices employer",
+    "search_keywords": ["shell company", "fictitious vendor", "fake vendor", "embezzl"],
+    "how": "An employee pays a shell company or a relative, keeping each payment just under the amount that needs a second approval.",
+    "case": null,
+    "fact": {
+      "text": "More than half of fraud cases involve missing internal controls or someone overriding them, and the typical scheme runs 12 months before it's caught.",
+      "source": "ACFE Occupational Fraud 2026",
+      "url": "https://www.acfe.com/acfe-insights-blog/blog-detail?s=key-findings-report-to-the-nations-2026"
+    }
+  }
+]

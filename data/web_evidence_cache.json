@@ -1,0 +1,82 @@
+{
+  "bank_change": [
+    {
+      "url": "https://www.nacha.org/sites/default/files/2019-04/NACHABECVIF.pdf",
+      "title": "[PDF] Business Email Compromise, Vendor Impersonation Fraud ... - Nacha",
+      "content": "rather than contact information provided with the change request. For example, use an already known telephone number instead of a number provided in a change request. \uf0b7 Be especially cautious if the request for payment is from a personal email account instead of the company email. \uf0b7 Review your acco"
+    },
+    {
+      "url": "https://www.cisa.gov/news-events/alerts/2015/06/24/business-email-compromise-continues-swindle-and-defraud-us-businesses",
+      "title": "Business Email Compromise Continues to Swindle and ... - CISA",
+      "content": "Most BEC incidents involve the compromise of an email account belonging to a business\u2019s CEO/CFO in order to send an email to an employee with the ability to conduct wire transfers. Other incidents involve the compromise of a vendor/supplier\u2019s email account with the intent of modifying the bank accou"
+    },
+    {
+      "url": "https://www.bbb.org/all/scamstudies/bec_scams/bec_scams_full_study",
+      "title": "Business Email Compromise Scam Full Study - BBB",
+      "content": "Armed with that information, fraudsters could send an email impersonating the building contractor providing a bill, stating that the bank account information where payments are to be made has changed and start receiving payments. If this succeeds once, the fraudsters may continue to receive payments"
+    }
+  ],
+  "lookalike": [
+    {
+      "url": "https://www.ic3.gov/PSA/2023/psa230324",
+      "title": "Internet Crime Complaint Center (IC3) | Business Email Compromise Tactics Used to Facilitate the Acquisition of Commodities and Defrauding Vendors",
+      "content": "### Methodology\n\nCriminal actors impersonate the email domains of legitimate U.S.-based companies using spoofed email domain addresses and the display names of current or former company employees, as well as fictitious names to initiate the bulk purchase of goods from vendors across the U.S. As a re"
+    },
+    {
+      "url": "https://www.nacha.org/sites/default/files/2019-04/NACHABECVIF.pdf",
+      "title": "[PDF] Business Email Compromise, Vendor Impersonation Fraud ... - Nacha",
+      "content": "government and other public-sector organizations. With BEC, legitimate business email accounts are either compromised or impersonated, and then used to order or request the transfer of funds. The fraudster will often compromise one of the business\u2019s officers and monitor their account for patterns, c"
+    },
+    {
+      "url": "https://www.ic3.gov/PSA/2018/PSA180611",
+      "title": "Internet Crime Complaint Center (IC3) | Business Email Compromise Contributes To Large Scale Business Losses Nationwide",
+      "content": "BEC is a sophisticated scam in which a criminal actor uses email to impersonate a business executive or other employee to request fraudulent payments or obtain access to employee payroll or W2 information. The criminal actor will typically leverage a victim's authority to pressure targets into actin"
+    }
+  ],
+  "exec_pressure": [
+    {
+      "url": "http://www.ic3.gov/media/2016/160614.aspx",
+      "title": "Internet Crime Complaint Center (IC3) | Business E-mail Compromise: The 3.1 Billion Dollar Scam",
+      "content": "Title: Internet Crime Complaint Center (IC3) | Business E-mail Compromise: The 3.1 Billion Dollar Scam\n## Business E-mail Compromise: The 3.1 Billion Dollar Scam. This Public Service Announcement (PSA) is an update to the Business E-mail Compromise (BEC) information provided in Public Service Announ"
+    },
+    {
+      "url": "https://www.forbes.com/sites/steveweisman/2024/11/09/fbi-issues-warning-about-the-business-email-compromise",
+      "title": "FBI Issues Warning About The Business Email Compromise",
+      "content": "Title: FBI Issues Warning About The Business Email Compromise\nThe Business Email Compromise (BEC) is a scam perpetrated by scammers who, using social engineering tactics, pose as company executives or trusted vendors to lure employees at their targeted companies to transfer funds to the scammers. Li"
+    },
+    {
+      "url": "https://www.fbi.gov/file-repository/email-compromise_508.pdf",
+      "title": "BUSINESS EMAIL COMPROMISE - FBI",
+      "content": "U.S. Department of Justice Federal Bureau of Investigation Office of Private Sector BUSINESS EMAIL COMPROMISE Business Email Compromise (BEC) is a sophisticated scam targeting businesses working with foreign sup-pliers and/or businesses that regularly perform wire transfer payments. [...] POTENTIAL "
+    }
+  ],
+  "fake_invoice": [
+    {
+      "url": "https://cms.acfe.com/fraud-magazine/all-issues/issue/article?s=2022-julyaug-billing-fraud-birds-eye-view",
+      "title": "Fraud Magazine Article",
+      "content": "Jul 1, 2022 \u00b7 In its most basic form, billing fraud , which falls under the category of asset misappropriation, can be broadly defined as a fraudulent disbursement scheme in which a... FOREWORD On behalf of the ACFE, I am proud to present Occupational Fraud 2024: A Report to the Nations. This report"
+    },
+    {
+      "url": "https://www.acfe.com/en-us/-/media/files/acfe/pdfs/rttn/2024/2024-report-to-the-nations.pdf",
+      "title": "OCCUPATIONAL FRAUD 2024: A REPORT TO THE NATIONS",
+      "content": "FRAUD PREVENTION CHECKLIST Occupational Fraud 2024: A Report to the Nations 104 GLOSSARY OF TERMINOLOGY Asset misappropriation: A scheme in which an employee steals or misuses the employing organization\u2019s resources (e.g., theft of company cash, false billing schemes, or inflated expense reports) Bil"
+    },
+    {
+      "url": "https://www.acfe.com/fraud-resources/fraud-schemes",
+      "title": "Fraud Schemes - ACFE",
+      "content": "### Introduction to Bribery and Corruption\n\nLearn about bribery and corruption through 10 lessons covering topics from illegal gratuities and economic extortion to conflicts of interest and red flags of corruption.\n\nPlease sign in to save this to your favorites.\n\nImage for Online Self Study Course, "
+    }
+  ],
+  "insider": [
+    {
+      "url": "https://www.justice.gov/usao-wdmo/pr/former-university-employee-sentenced-781000-fraud-scheme",
+      "title": "Former University Employee Sentenced for $781000 Fraud Scheme",
+      "content": "Rathmann embezzled a total of $781,670, primarily by submitting fake and fraudulent invoices and bills to the University of Missouri. Rathmann"
+    },
+    {
+      "url": "https://www.acfe.com/fraud-resources/shell-companies",
+      "title": "Shell Companies - ACFE",
+      "content": "## What is a shell company?\n\nShell companies are used for a wide variety of purposes, both legal and illegal. As a result, there is no universally accepted definition of the term \u201cshell company.\u201d The ACFE\u2019s Fraud Examiners Manual defines shell companies as:  \n\n> Business entities that typically have"
+    }
+  ]
+}

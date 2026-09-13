@@ -1,0 +1,12 @@
+[
+  {
+    "vendor": "Northwind Freight Co.",
+    "requested_at": "2026-07-01T09:12:00Z",
+    "requested_via": "email",
+    "sender_email": "accounts@northwind-freight.example",
+    "old_account": "••4417",
+    "new_account": "••9921",
+    "processed_by": "Daniel Rivera",
+    "callback_verified": false
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "transaction_id": "demo-0006",
+    "approved_by": "Priya Shah",
+    "approved_at": "2026-06-10T14:03:00Z",
+    "second_approval_required": true,
+    "second_approved_by": null
+  },
+  {
+    "transaction_id": "demo-0007",
+    "approved_by": "Priya Shah",
+    "approved_at": "2026-06-10T14:22:00Z",
+    "second_approval_required": true,
+    "second_approved_by": null
+  },
+  {
+    "transaction_id": "demo-0008",
+    "approved_by": "Priya Shah",
+    "approved_at": "2026-06-10T14:43:00Z",
+    "second_approval_required": true,
+    "second_approved_by": null
+  },
+  {
+    "transaction_id": "demo-0009",
+    "approved_by": "Andrew Collins",
+    "approved_at": "2026-04-17T10:20:00Z",
+    "second_approval_required": false,
+    "second_approved_by": null
+  },
+  {
+    "transaction_id": "demo-0010",
+    "approved_by": "Andrew Collins",
+    "approved_at": "2026-05-15T10:14:00Z",
+    "second_approval_required": false,
+    "second_approved_by": null
+  },
+  {
+    "transaction_id": "demo-0011",
+    "approved_by": "Andrew Collins",
+    "approved_at": "2026-06-12T10:27:00Z",
+    "second_approval_required": false,
+    "second_approved_by": null
+  }
+]

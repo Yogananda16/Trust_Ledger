@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Northwind Freight Co.",
+    "email_domain": "northwindfreight.example",
+    "bank_account": "••4417",
+    "added_by": "Daniel Rivera",
+    "added_at": "2026-03-20T10:05:00Z"
+  },
+  {
+    "name": "Summit Legal LLP",
+    "email_domain": "summitlegal.example",
+    "bank_account": "••1182",
+    "added_by": "Daniel Rivera",
+    "added_at": "2026-03-01T11:30:00Z"
+  },
+  {
+    "name": "Summit Legal LLC",
+    "email_domain": "summit-legal-llc.example",
+    "bank_account": "••6630",
+    "added_by": "Daniel Rivera",
+    "added_at": "2026-05-11T18:40:00Z"
+  },
+  {
+    "name": "Halcyon Advisory Partners",
+    "email_domain": "halcyonadvisory.example",
+    "bank_account": "••3108",
+    "added_by": "Priya Shah",
+    "added_at": "2026-06-10T13:55:00Z"
+  },
+  {
+    "name": "Brightpath Capital Ltd",
+    "email_domain": "brightpathcapital.example",
+    "bank_account": "••7745",
+    "added_by": "Priya Shah",
+    "added_at": "2026-06-10T14:16:00Z"
+  },
+  {
+    "name": "Meridian Escrow Services",
+    "email_domain": "meridianescrow.example",
+    "bank_account": "••5092",
+    "added_by": "Priya Shah",
+    "added_at": "2026-06-10T14:38:00Z"
+  },
+  {
+    "name": "R. Collins Consulting",
+    "email_domain": "rcollinsconsulting.example",
+    "bank_account": "••2208",
+    "added_by": "Andrew Collins",
+    "added_at": "2026-04-15T09:30:00Z"
+  }
+]

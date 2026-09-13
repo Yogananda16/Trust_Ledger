@@ -1,0 +1,8 @@
+fastapi==0.141.1
+uvicorn==0.52.4
+requests==2.34.2
+python-dotenv==1.2.3
+chromadb==1.5.9
+sentence-transformers==6.0.1
+tavily-python==0.8.2
+elevenlabs==2.68.0

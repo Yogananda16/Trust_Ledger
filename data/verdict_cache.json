@@ -1,0 +1,420 @@
+{
+  "Aaron Blake": {
+    "risk": "Medium",
+    "reason": "The only online evidence for Aaron\u202fBlake is a personal website (www.aaronblaketenor.com) and individual references, indicating a thin web presence with no established business entity.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "A vendor or requester pressures staff to bypass the company's normal invoice-approval procedures for this one payment.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms."
+    ],
+    "sources": [
+      {
+        "url": "https://www.whitesnakeprojects.org/bios/aaron-blake",
+        "title": "Aaron Blake",
+        "content": "Aaron Blake, earned international recognition for his creation of the role of Timothy Laughlin s Fellow Travelers. Website: www.aaronblaketenor.com Instagram,"
+      },
+      {
+        "url": "https://au.linkedin.com/in/aaron-blake-16b6b572",
+        "title": "Aaron Blake - Founder Bones Factory - Macmahon",
+        "content": "# Aaron Blake\nFounder Bones Factory\nGreater Adelaide Area, AU  \n93 connections, 93 followers\n\n## About\nFounder Bones Factory action lifestyle brand<br><br>\n\n## Experience\n### Mobile Plant Operator  \nMacmahon  \nFeb 2017 - Present   \nTelfer, Western Australia, Australia  \n\n### Mobile Plant Operator  \n"
+      },
+      {
+        "url": "https://www.datanyze.com/people/Aaron-Blake/17745747226",
+        "title": "AAron BLakE's email & phone - Braille Works International",
+        "content": "AAron BLakE works as a Document Specialist at Braille Works International, which is a Media & Internet company with an estimated 97 employees; and founded in"
+      }
+    ],
+    "detail": "first payment to this vendor. Memo: \"Contractor hours\"",
+    "search_version": 3
+  },
+  "Civic Affairs Inc.": {
+    "risk": "Medium",
+    "reason": "The first\u2011time payment of $59,000 with a vague memo to Civic Affairs Inc. and the simultaneous creation of two new payees in quick succession signals a Medium risk.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate."
+    ],
+    "sources": [
+      {
+        "url": "https://tracxn.com/d/legal-entities/india/forum-for-research-on-civic-affairs/__S9q4Q9JlXeBvXCO8TXgU0xjJl8d_v6yUtXGCz83HM_0",
+        "title": "FORUM FOR RESEARCH ON CIVIC AFFAIRS - 2026 Company ...",
+        "content": "FORUM FOR RESEARCH ON CIVIC AFFAIRS - Company Profile ... Its registered address is 304 Rajhans, Sunder Nagar Lane No. ... Registered Office: L-248, 2nd Floor, 17th"
+      },
+      {
+        "url": "https://catalog.hathitrust.org/Record/003294160",
+        "title": "Catalog Record: Civic affairs | HathiTrust Digital Library",
+        "content": "Published 1934 Civic affairs Published 1953 Citizenship and civic affairs Author Rugg, Harold Ordway, 1886-1960. Published 1940 Civic affairs, Saline, 10th"
+      },
+      {
+        "url": "https://www.armscontrolwonk.com/archive/1205276/on-memorial-day-remembering-mark-hatfield-and-others-who-served",
+        "title": "On Memorial Day, Remembering Mark Hatfield and Others Who ...",
+        "content": "Because of his field of expertise, the Army assigned him to a civic affairs company. Montgomery was sent to language school and took a crash"
+      }
+    ],
+    "detail": "first payment to this vendor; $59,000 wire; vague memo: \"Transfer to external account\"; 2 new payees paid within 2 min. Memo: \"Transfer to external account\"\nEvidence from company records:\n- On Mar 30, 2026, between 11:34 UTC and 11:36 UTC, payments to 2 first-time payees were created: Civic Affairs Inc. ($59,000), Harborline Logistics ($12,500). Total $71,500.\n- Sent by Daniel Rivera and Priya Shah.",
+    "search_version": 3
+  },
+  "Crescent Property Group": {
+    "risk": "Medium",
+    "reason": "No web results or verifiable business information are available for Crescent Property Group, and this is the first payment, so the lack of evidence at a potentially large amount warrants a medium risk assessment.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms."
+    ],
+    "sources": [],
+    "detail": "first payment to this vendor. Memo: \"Monthly office rent\"",
+    "search_version": 3
+  },
+  "Everline Creative Studio": {
+    "risk": "High",
+    "reason": "The same invoice number (317) and amount ($562.50) was used in a payment to Summit Legal LLP just two days earlier, indicating duplicate invoicing for different vendors.",
+    "rag_matches": [
+      "An invoice's amount or line items don't match what was actually ordered or received from that vendor.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate.",
+      "A vendor or requester pressures staff to bypass the company's normal invoice-approval procedures for this one payment."
+    ],
+    "sources": [],
+    "detail": "first payment to this vendor; Invoice 317 already used by Summit Legal LLP. Memo: \"Invoice 317 - production hours\"\nEvidence from company records:\n- Invoice 317 was paid to Summit Legal LLP on Mar 15, 2026: $562.50, settled.\n- 2 days later, the same invoice number and amount went to Everline Creative Studio by wire (failed).",
+    "search_version": 3
+  },
+  "Foundry Works Inc.": {
+    "risk": "Medium",
+    "reason": "The vendor name matches Foundry Works Design Limited, an AI agent services company incorporated in England and Wales (Company Overview for FOUNDRY WORKS DESIGN LIMITED (15748173)), yet the memo \u201cSC\u20112509 desk mat order\u201d is unrelated to the company\u2019s described services, leaving the vendor plausible but unverified.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "A vendor overpays and asks for the difference to be returned, using a check that later turns out to be fraudulent.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate."
+    ],
+    "sources": [
+      {
+        "url": "https://find-and-update.company-information.service.gov.uk/company/15748173",
+        "title": "FOUNDRY WORKS DESIGN LIMITED overview - Find and update company information - GOV.UK",
+        "content": "Follow this company  File for this company\n\n Company Overview for FOUNDRY WORKS DESIGN LIMITED (15748173)\n Filing history for FOUNDRY WORKS DESIGN LIMITED (15748173)\n People for FOUNDRY WORKS DESIGN LIMITED (15748173)\n More for FOUNDRY WORKS DESIGN LIMITED (15748173)\n\nRegistered office address\n:   C"
+      },
+      {
+        "url": "https://www.linkedin.com/company/foundry-works",
+        "title": "FoundryWorks",
+        "content": "Company size: 51-200 employees. Headquarters: Santa Monica, CA. Type ... FW.D (Foundry Works.Design). Design Services \u00b7 Fantasy Points. Spectator Sports"
+      },
+      {
+        "url": "https://foundryworks.ai/privacy-policy",
+        "title": "Privacy Policy - Foundry Works",
+        "content": "# Privacy Policy\n\nHow Foundry Works collects, uses, and protects your data.\n\nLast updated: 28 March 2026\n\n## Who We Are\n\nFoundry Works (\"we\", \"us\", or \"our\") is an AI agent services company incorporated in England and Wales. We build, deploy, and manage AI agent teams for businesses.\n\n Company: Foun"
+      }
+    ],
+    "detail": "first payment to this vendor. Memo: \"SC-2509 desk mat order\"",
+    "search_version": 3
+  },
+  "Guangzhou Harbor Apparel Co., Ltd.": {
+    "risk": "Medium",
+    "reason": "Vendor Guangzhou Harbor Apparel Co., Ltd. has no verifiable web presence and this is a first payment with no prior verification.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "An invoice's amount or line items don't match what was actually ordered or received from that vendor.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate."
+    ],
+    "sources": [],
+    "detail": "first payment to this vendor. Memo: \"C-10001 merchandise order\"",
+    "search_version": 3
+  },
+  "Harborline Logistics": {
+    "risk": "Medium",
+    "reason": "The first-time payment to Harborline Logistics of $12,500 exceeds the $5,000 threshold, which the guidance marks as a medium risk for large first-time vendor payments.",
+    "rag_matches": [
+      "An invoice's amount or line items don't match what was actually ordered or received from that vendor.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate.",
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts."
+    ],
+    "sources": [
+      {
+        "url": "https://pitchbook.com/profiles/company/1462531-42",
+        "title": "Harborline Logistics 2026 Company Profile",
+        "content": "Growth Rate\n\nSize Multiple\n\nKey Data Points\n\nSimilarweb Unique Visitors\n\nMajestic Referring Domains\n\nPitchBook\u2019s non-financial metrics help you gauge a company\u2019s traction and growth using web presence and social reach.\n\n## Harborline Logistics Investors (1)\n\n| Investor Name | Investor Type | Holding"
+      },
+      {
+        "url": "https://www.crunchbase.com/organization/harborline-logistics-inc",
+        "title": "Harborline Logistics - Crunchbase Company Profile & ...",
+        "content": "Where is Harborline Logistics 's headquarters? Harborline Logistics is located in Dartmouth, Nova Scotia, Canada . Browse By: Organizations, People, Events."
+      },
+      {
+        "url": "https://harborlinelogistic.com",
+        "title": "Harborline Logistics Inc.",
+        "content": "What safety measures do you have in place?\n\nOur fleet features spill prevention systems, emergency equipment, and regular maintenance checks. All operations comply with environmental standards, and we maintain zero-incident records.\n\n## Get In Touch With Us Today\n\nFeel free to reach out to us for an"
+      }
+    ],
+    "detail": "first payment to this vendor; awaiting approval, can still be stopped; 2 new payees paid within 2 min. Memo: \"Q3 freight invoice\"\nEvidence from company records:\n- On Mar 30, 2026, between 11:34 UTC and 11:36 UTC, payments to 2 first-time payees were created: Civic Affairs Inc. ($59,000), Harborline Logistics ($12,500). Total $71,500.\n- Sent by Daniel Rivera and Priya Shah.",
+    "search_version": 3
+  },
+  "Maison Aurelia SAC": {
+    "risk": "Medium",
+    "reason": "The web findings identify Maison\u202fAurelia as a bed\u2011and\u2011breakfast in Denpasar, Indonesia, rather than an inventory supplier, and the memo \u201cInventory purchase closing\u201d for a first\u2011time payment is vague, indicating potential misrepresentation.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms.",
+      "An invoice's amount or line items don't match what was actually ordered or received from that vendor."
+    ],
+    "sources": [
+      {
+        "url": "https://maisonaurelia.co/policies/privacy-policy",
+        "title": "Privacy policy \u2013 Maison Aurelia",
+        "content": "# Privacy policy\n\nLast updated: January 4, 2026\n\nMaison Aurelia operates this store and website, including all related information, content, features, tools, products and services, in order to provide you, the customer, with a curated shopping experience (the \"Services\"). Maison Aurelia is powered b"
+      },
+      {
+        "url": "https://mitmagazine.co.uk/Meeting-Event-Venues/Denpasar-Indonesia/Convention-Hotel/Maison-Aurelia-Sanur-p58255067",
+        "title": "Maison Aurelia Sanur - Denpasar, Indonesia",
+        "content": "Address: Jalan Danau Tamblingan Denpasar, Indonesia 80228 ; Phone: 62 361-472-1111 ; Fax: 62 361-472-1234."
+      },
+      {
+        "url": "https://www.booking.com/hotel/fr/maison-aurelia.html",
+        "title": "Maison Aurelia, Araujuzon (updated prices 2026)",
+        "content": "A recently renovated bed and breakfast, Maison Aurelia offers accommodation in Araujuzon. Managed by Lynn Company \u2026 is part of Booking Holdings Inc., the world"
+      }
+    ],
+    "detail": "first payment to this vendor. Memo: \"Inventory purchase closing\"",
+    "search_version": 3
+  },
+  "Marcus Hill": {
+    "risk": "Medium",
+    "reason": "The vendor, founded in 2025 with no publicly listed website, Crunchbase, or LinkedIn presence, is a newly established entity with only minimal company records, making it unverified and a first-time payment to a vendor with a vague memo.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms.",
+      "A vendor overpays and asks for the difference to be returned, using a check that later turns out to be fraudulent."
+    ],
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/marcus-hill-company-%C2%AE",
+        "title": "Marcus Hill & Company - Empowering People and Partnerships to Go Be Great",
+        "content": "### Website\n\n### Crunchbase\nN/A\n### LinkedIn\nN/A\n\n### Industry\nBusiness Consulting and Services\n\n### Company Size\n2-10 employees  \n2 associated members (LinkedIn members who've listed Marcus Hill & Company as their current workplace on their profile)\n\n### Founded\n2025\n\n### Funding\nLast Round Date: N"
+      },
+      {
+        "url": "https://find-and-update.company-information.service.gov.uk/company/14283164",
+        "title": "MARCUS HILL LIMITED overview - Companies House",
+        "content": "Registered office address: Room 73, The Mansion House Wrest Park, Silsoe, Bedford, United Kingdom, MK45 4HR. Company status: Active."
+      },
+      {
+        "url": "https://www.zoominfo.com/p/Marcus-Hill/96884241",
+        "title": "Licensed Real Estate Agent at Keller Williams Realty",
+        "content": "Address 1221 S Mopac Expy Ste 110, Austin, Texas, 78746, United States Phone Number (512) 327-3070. Marcus Hill's headquarters phone number is (512) 327-3070"
+      }
+    ],
+    "detail": "first payment to this vendor. Memo: \"Severance payment\"",
+    "search_version": 3
+  },
+  "Summit Legal LLP": {
+    "risk": "Medium",
+    "reason": "No website, LinkedIn, or Crunchbase information is found for Summit Legal LLP, and the firm has only one employee and was founded in 2022, indicating an unverified vendor.",
+    "rag_matches": [
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate.",
+      "A vendor or requester pressures staff to bypass the company's normal invoice-approval procedures for this one payment.",
+      "An invoice closely resembles a vendor's past legitimate invoices but has slightly altered payment or account details."
+    ],
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/slc205",
+        "title": "Summit Legal Consulting - Business-Minded Legal Consulting For Start-ups And Founders",
+        "content": "### Website\nN/A\n### Crunchbase\nN/A\n### LinkedIn\nN/A\n\n### Industry\nLegal Services\n\n### Company Size\n1 employee  \n1 associated members (LinkedIn members who've listed Summit Legal Consulting as their current workplace on their profile)\n\n### Founded\n2022\n\n### Funding\nLast Round Date: N/A\nLast Round Typ"
+      }
+    ],
+    "detail": "first payment to this vendor. Memo: \"Invoice 317 - consulting services\"",
+    "search_version": 3
+  },
+  "Thomas Reed": {
+    "risk": "Medium",
+    "reason": "The vendor name \u201cThomas Reed\u201d appears only in fragmented, unrelated listings (no single business domain or clear corporate record) and the first payment is made with a vague memo \u201cPayroll cycle,\u201d indicating an unverified vendor and ambiguous transaction context.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms.",
+      "An invoice closely resembles a vendor's past legitimate invoices but has slightly altered payment or account details."
+    ],
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/pub/dir/Thomas/Reed",
+        "title": "1500+ \"Thomas Reed\" profiles",
+        "content": "Thomas Reed Founder and CEO at Reed-Ventures San Diego County, CA. Washington DC-Baltimore Area. Hills, GA | Owner, DesirePath LLC"
+      },
+      {
+        "url": "https://www.thomasreed.com",
+        "title": "Houston Texas Tax Preparation and Accounting | Thomas Reed, P.C.",
+        "content": "Thomas Reed, P.C. Accessibility Statement  \n   \n Updated: June 2020.   \n  \n General  \n  \n Thomas Reed, P.C. strives to ensure that its services are accessible to people with disabilities. Thomas Reed, P.C. has invested a significant amount of resources to help ensure that its website is made easier "
+      },
+      {
+        "url": "https://www.zoominfo.com/p/Thomas-Reed/405548533",
+        "title": "Thomas Reed - Founder at Envolved",
+        "content": "Thomas C. Reed is a Senior Accountant at Bray International, bringing expertise in financial management and accounting practices."
+      }
+    ],
+    "detail": "first payment to this vendor. Memo: \"Payroll cycle\"",
+    "search_version": 3
+  },
+  "Wellstone Media LLC": {
+    "risk": "Medium",
+    "reason": "First\u2011time payment with a vague memo and no web presence for Wellstone Media LLC warrants a medium risk assessment.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate."
+    ],
+    "sources": [],
+    "detail": "first payment to this vendor; vague memo: \"Vendor payment\". Memo: \"Vendor payment\"",
+    "search_version": 3
+  },
+  "Brightpath Capital Ltd": {
+    "risk": "High",
+    "reason": "Brightpath Capital Ltd was added to the vendor list just 5 minutes before its first $52,000 wire, paid alongside two other new vendors in under 40\u202fminutes with a pressure memo \u201cConfidential acquisition \u2013 per CFO, wire today,\u201d and the payment was created and approved by the same employee (Priya\u202fShah) without the required second approval.",
+    "rag_matches": [
+      "A vendor or requester pressures staff to bypass the company's normal invoice-approval procedures for this one payment.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms.",
+      "A payment request comes with pressure to act quickly, discouraging the normal review or approval process."
+    ],
+    "sources": [],
+    "detail": "first payment to this vendor; $52,000 wire; Pressure language: \"confidential\"; 3 new payees paid within 40 min. Memo: \"Confidential acquisition - per CFO, wire today\"\nEvidence from company records:\n- Brightpath Capital Ltd was added to the vendor list by Priya Shah 5 minutes before its first payment.\n- On Jun 10, 2026, between 14:02 UTC and 14:42 UTC, payments to 3 first-time payees were created: Halcyon Advisory Partners ($48,000), Brightpath Capital Ltd ($52,000), Meridian Escrow Services ($50,000). Total $150,000.\n- Sent by Priya Shah.\n- Priya Shah created this payment and approved it 1 minute later, without the required second approval.",
+    "search_version": 3
+  },
+  "Halcyon Advisory Partners": {
+    "risk": "High",
+    "reason": "Multiple first\u2011time payees (Halcyon, Brightpath, Meridian) were wired within 40\u202fminutes with pressure language \u201cConfidential acquisition \u2013 per CFO\u201d and approved by the same employee in one minute, matching the high\u2011risk red\u2011flag criteria.",
+    "rag_matches": [
+      "A vendor or requester pressures staff to bypass the company's normal invoice-approval procedures for this one payment.",
+      "A payment request comes with pressure to act quickly, discouraging the normal review or approval process.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms."
+    ],
+    "sources": [],
+    "detail": "first payment to this vendor; $48,000 wire; Pressure language: \"confidential\"; 3 new payees paid within 40 min. Memo: \"Confidential acquisition - per CFO\"\nEvidence from company records:\n- Halcyon Advisory Partners was added to the vendor list by Priya Shah 7 minutes before its first payment.\n- On Jun 10, 2026, between 14:02 UTC and 14:42 UTC, payments to 3 first-time payees were created: Halcyon Advisory Partners ($48,000), Brightpath Capital Ltd ($52,000), Meridian Escrow Services ($50,000). Total $150,000.\n- Sent by Priya Shah.\n- Priya Shah created this payment and approved it 1 minute later, without the required second approval.",
+    "search_version": 3
+  },
+  "Meridian Escrow Services": {
+    "risk": "High",
+    "reason": "The payment is high\u2011risk because it involves pressure language, a vague urgent memo, three first\u2011time payees paid within 40 minutes, a vendor added only minutes before the payment, and no second approval was obtained.",
+    "rag_matches": [
+      "A vendor or requester pressures staff to bypass the company's normal invoice-approval procedures for this one payment.",
+      "A payment request comes with pressure to act quickly, discouraging the normal review or approval process.",
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts."
+    ],
+    "sources": [],
+    "detail": "first payment to this vendor; $50,000 wire; Pressure language: \"urgent\"; 3 new payees paid within 40 min. Memo: \"Urgent: acquisition escrow - keep confidential\"\nEvidence from company records:\n- Meridian Escrow Services was added to the vendor list by Priya Shah 4 minutes before its first payment.\n- On Jun 10, 2026, between 14:02 UTC and 14:42 UTC, payments to 3 first-time payees were created: Halcyon Advisory Partners ($48,000), Brightpath Capital Ltd ($52,000), Meridian Escrow Services ($50,000). Total $150,000.\n- Sent by Priya Shah.\n- Priya Shah created this payment and approved it 1 minute later, without the required second approval.",
+    "search_version": 3
+  },
+  "Northwind Freight Co.": {
+    "risk": "High",
+    "reason": "The vendor\u2019s bank details changed from \u2022\u20224417 to \u2022\u20229921 without prior notice or a recorded callback, a known fraud pattern that raises strong concern.",
+    "rag_matches": [
+      "A vendor's regular payment or bank account details suddenly change, often with a message claiming they've switched banks.",
+      "A vendor's contact information (phone, email, or mailing address) changed recently with no clear prior notice.",
+      "A new vendor has a generic, forgettable name paired with a domain that was registered only days or weeks ago."
+    ],
+    "sources": [],
+    "detail": "Bank details changed (\u2022\u20224417 \u2192 \u2022\u20229921); awaiting approval, can still be stopped. Memo: \"July freight - updated remittance details\"\nEvidence from company records:\n- 3 earlier payments to Northwind Freight Co. went to account \u2022\u20224417.\n- On Jul 1, 2026, a request by email from accounts@northwind-freight.example changed the account to \u2022\u20229921.\n- The sender's domain northwind-freight.example doesn't match northwindfreight.example, the domain on file for this vendor.\n- No call-back to a known phone number was recorded before the change.\n- This payment was created 2 days after the change.",
+    "search_version": 3
+  },
+  "R. Collins Consulting": {
+    "risk": "High",
+    "reason": "3 payments just under the $5,000 limit to R. Collins Consulting, which shares the name of the employee who created and approved them with no second approval.",
+    "rag_matches": [
+      "A vendor or requester pressures staff to bypass the company's normal invoice-approval procedures for this one payment.",
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "A payment request comes with pressure to act quickly, discouraging the normal review or approval process."
+    ],
+    "sources": [],
+    "detail": "3 payments just under the $5,000 approval limit; Payee shares a name with employee Andrew Collins, who sent it. Memo: \"Advisory services - June\"\nEvidence from company records:\n- R. Collins Consulting was added to the vendor list by Andrew Collins 2 days before its first payment.\n- 3 payments to R. Collins Consulting ($4,950 on Apr 18, $4,950 on May 16, $4,950 on Jun 13) each stayed under the $5,000 limit that needs a second approval.\n- Andrew Collins created all 3 payments to this vendor and approved all of them with no second approver.\n- Andrew Collins created this payment and approved it 4 minutes later.",
+    "search_version": 3
+  },
+  "Summit Legal LLC": {
+    "risk": "High",
+    "reason": "Vendor name closely mimics Summit Legal LLP already on file, uses a different email domain and bank account, and was added only 22 hours before the first payment.",
+    "rag_matches": [
+      "An invoice closely resembles a vendor's past legitimate invoices but has slightly altered payment or account details.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate.",
+      "No business registration, filing, or public record can be found for a vendor claiming to be an established company."
+    ],
+    "sources": [],
+    "detail": "first payment to this vendor; Name looks like Summit Legal LLP. Memo: \"Invoice 402 - litigation retainer\"\nEvidence from company records:\n- Summit Legal LLC was added to the vendor list by Daniel Rivera 22 hours before its first payment.\n- Summit Legal LLC emails from summit-legal-llc.example, but Summit Legal LLP, already on file, uses summitlegal.example.\n- It is paid to account \u2022\u20226630, not Summit Legal LLP's account \u2022\u20221182.\n- Summit Legal LLP was last paid $562.50 on Mar 15, 2026.",
+    "search_version": 3
+  },
+  "Amazon Web Services": {
+    "risk": "Medium",
+    "reason": "First\u2011time payment to the well\u2011established Amazon Web Services, whose headquarters are documented at 410 Terry Ave\u202fN, Seattle (Amazon Web Services Inc. 410 Terry Ave\u202fN. Seattle, WA 98109\u20115210), shows no negative findings, but the absence of prior transactions makes the payment a medium\u2011risk case.",
+    "rag_matches": [
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms.",
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts."
+    ],
+    "sources": [
+      {
+        "url": "https://www.clay.com/dossier/amazon-web-services-headquarters-office-locations",
+        "title": "Where is Amazon Web Services's Headquarters? Main ...",
+        "content": "## Where Is Amazon Web Services's Headquarters?\n\nThe main headquarters for Amazon Web Services is located at 410 Terry Avenue North, Seattle, Washington. This office functions as the central hub for the company's global cloud computing business. Key corporate operations, executive leadership, and st"
+      },
+      {
+        "url": "https://www.bbb.org/us/wa/seattle/profile/computer-hardware/amazon-web-services-inc-1296-22687103",
+        "title": "Amazon Web Services Inc | BBB Business Profile",
+        "content": "Own this business? Amazon Web Services Inc. 410 Terry Ave N. Seattle, WA 98109-5210. View Headquarters"
+      },
+      {
+        "url": "https://pitchbook.com/profiles/company/104872-06",
+        "title": "Amazon Web Services - PitchBook Company Profile and ...",
+        "content": "## Amazon Web Services Affiliates\n\nSubsidiaries (9)\n\n| Name | Industry | Location | Year Founded |\n ---  --- |\n| SDV Accelerator |  | Seattle, WA | 2025 |\n| Feenix.AI |  | San Jose, CA | 2023 |\n| Amazon Web Services Puerto Rico |  | Guaynabo, PR | 2021 |\n| ML Elevate |  | Bangalore, India | 2020 |\n|"
+      }
+    ],
+    "detail": "first payment to this vendor. Memo: \"Cloud hosting - June invoice\"",
+    "search_version": 3
+  },
+  "Deel": {
+    "risk": "Low",
+    "reason": "Deel is a well\u2011established SaaS company headquartered in San Francisco with over 2000 employees and publicly available corporate information, showing no red flag signals.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms.",
+      "An invoice's amount or line items don't match what was actually ordered or received from that vendor."
+    ],
+    "sources": [
+      {
+        "url": "https://salestools.io/en/report/deel-headquarters",
+        "title": "Deel Headquarters - Office Location & Address",
+        "content": "2000+\n\n## Deel Headquarters\n\n  \n\n## Company Overview\n\n  \n\nDeel is a leading SaaS company headquartered in San Francisco, CA. Global payroll and compliance platform. Founded in 2019, the company has grown to employ 2000+ professionals worldwide.\n\n  \n\n## Headquarters Location\n\n  \n\nAddress: 425 1st St,"
+      },
+      {
+        "url": "https://research.contrary.com/company/deel",
+        "title": "Report: Deel Business Breakdown & Founding Story | Contrary Research",
+        "content": "Powered by\n\nCompaniesReportsFoundations & FrontiersTech Trends ReportConversationsFellowshipAbout\n\nSubscribe\n\nPowered by\n\n\u00a9 2026Contrary Research \u00b7 All rights reserved\n\nPrivacy Policy\n\nBy navigating this website you agree to ourprivacy policy.\n\n# Deel\n\nFintech\n\nHR\n\nDeel is an all-in-one HR platform "
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Deel,_Inc.",
+        "title": "Deel, Inc. - Wikipedia",
+        "content": "Deel, Inc.\n\n| Type | Private |\n| Founded | 2019; 7 years ago (2019) |\n| Founder |  Alex Bouaziz (CEO)  Shuo Wang (CRO)  Dan Westgarth (COO) |\n| Products | Professional employer organization services and  payroll services |\n| Revenue | IncreaseUS$1 billion (2025) |\n| Number of employees | 7,500 (2025"
+      }
+    ],
+    "detail": "first payment to this vendor. Memo: \"International contractor payments - July\"",
+    "search_version": 3
+  },
+  "Gusto": {
+    "risk": "Low",
+    "reason": "Gusto, Inc. is an established payroll software company with a clear web presence (e.g., verified address 525 20th Street, San Francisco, California) and the memo \u201cPayroll platform subscription - July\u201d shows a standard, expected transaction.",
+    "rag_matches": [
+      "A vendor being paid for the first time receives an unusually large payment relative to typical first-time vendor amounts.",
+      "Payment is demanded via wire transfer, cryptocurrency, or gift cards instead of a vendor's normal invoicing terms.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate."
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gusto,_Inc.",
+        "title": "Gusto, Inc.",
+        "content": "Not to be confused with Gousto.\n\nGusto, Inc.\n\n| Formerly | ZenPayroll, Inc. |\n| Type | Private |\n| Industry | business software industry Edit this on Wikidata |\n| Founded | November 2011; 14 years ago (2011-11) (as ZenPayroll) |\n| Headquarters | San Francisco Edit this on Wikidata |\n| Area served | "
+      },
+      {
+        "url": "https://www.globaldata.com/company-profile/gusto-inc",
+        "title": "Gusto Inc Company Profile - Overview",
+        "content": "Gain a 360-degree view of Gusto Inc and make more informed decisions for your business\n\nGain a 360-degree view of Gusto Inc and make more informed decisions for your business\nRegister your interest\n\nHeadquarters\nUnited States of America\n\nAddress\n525 20th Street, San Francisco, California, 94107\n\nWeb"
+      },
+      {
+        "url": "https://research.contrary.com/company/gusto",
+        "title": "Report: Gusto Business Breakdown & Founding Story",
+        "content": "Powered by\n\nCompaniesReportsFoundations & FrontiersTech Trends ReportConversationsFellowshipAbout\n\nSubscribe\n\nPowered by\n\n\u00a9 2026Contrary Research \u00b7 All rights reserved\n\nPrivacy Policy\n\nBy navigating this website you agree to ourprivacy policy.\n\n# Gusto\n\nHR\n\nGusto sells cloud-based payroll software f"
+      }
+    ],
+    "detail": "first payment to this vendor. Memo: \"Payroll platform subscription - July\"",
+    "search_version": 3
+  }
+}
