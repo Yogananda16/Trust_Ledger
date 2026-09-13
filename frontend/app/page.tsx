@@ -13,7 +13,7 @@ type Vendor = {
   evidence: string[];
   web_evidence: Source[];
   scenario: boolean;
-  featured: boolean;
+  pin: number | null;
   amount: number | null;
   risk: "Low" | "Medium" | "High";
   reason: string | null;
@@ -123,8 +123,8 @@ export default function Home() {
       .filter((v) => !patternFilter || v.signals.some((s) => s.pattern === patternFilter))
       .filter((v) => v.name.toLowerCase().includes(search.toLowerCase()))
       .sort((a, b) => {
-        // Real vendors with verifiable web results lead the list.
-        if (a.featured !== b.featured) return a.featured ? -1 : 1;
+        // Pinned vendors lead the list in their pinned order.
+        if (a.pin !== b.pin) return (a.pin ?? Infinity) - (b.pin ?? Infinity);
         const byRisk = RISK_ORDER[a.risk] - RISK_ORDER[b.risk];
         if (byRisk !== 0) return byRisk;
         return (b.amount ?? 0) - (a.amount ?? 0);

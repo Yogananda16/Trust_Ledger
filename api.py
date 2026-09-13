@@ -11,7 +11,7 @@ from fastapi.responses import FileResponse
 from pipeline.evidence import build_evidence
 from pipeline.novelty import flag_novel_vendors
 from pipeline.verdict import get_verdict
-from pipeline.tavily_check import check_vendor, search_pattern
+from pipeline.tavily_check import check_vendor, check_vendor_reputation, search_pattern
 from pipeline.voice import generate_briefing
 
 app = FastAPI()
@@ -74,9 +74,12 @@ def verdict_for(name, flag, detail):
 
         if search_current:
             findings = cached.get("sources", [])
-        elif flag.get("scenario") and not flag.get("featured"):
+        elif flag.get("scenario") and not flag.get("pin"):
             # Made-up demo vendors: a name search would only find unrelated real companies.
             findings = []
+        elif any("solicitation" in s["context"] for s in flag["signals"]):
+            # Listing and renewal invoices are a known scam format, so look for scam records, not a company profile.
+            findings = check_vendor_reputation(name) or check_vendor(name)
         else:
             findings = check_vendor(name)
 
@@ -138,7 +141,9 @@ def get_vendors():
                     "evidence": evidence,
                     "web_evidence": web_evidence,
                     "scenario": bool(f.get("scenario")),
-                    "featured": bool(f.get("featured")),
+                    "pin": f.get("pin"),
+                    # Kept for the frontend version already live on Vercel, which sorts by this.
+                    "featured": f.get("pin") is not None,
                     "amount": f["amount_dollars"],
                     "risk": result["risk"],
                     "reason": result["reason"],
@@ -155,6 +160,7 @@ def get_vendors():
                     "evidence": [],
                     "web_evidence": [],
                     "scenario": False,
+                    "pin": None,
                     "featured": False,
                     "amount": None,
                     "risk": "Low",

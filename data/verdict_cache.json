@@ -416,5 +416,61 @@
     ],
     "detail": "first payment to this vendor. Memo: \"Payroll platform subscription - July\"",
     "search_version": 3
+  },
+  "Premium Business Pages": {
+    "risk": "High",
+    "reason": "The vendor is named \u201cPremium Business Pages,\u201d a name that the FTC has recently charged in an enforcement action under Operation Main Street, indicating it is involved in fraudulent activity.",
+    "rag_matches": [
+      "An invoice closely resembles a vendor's past legitimate invoices but has slightly altered payment or account details.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate.",
+      "A new vendor has a generic, forgettable name paired with a domain that was registered only days or weeks ago."
+    ],
+    "sources": [
+      {
+        "url": "https://www.ftc.gov/business-guidance/blog/2018/06/operation-main-street-targets-scams-against-small-business",
+        "title": "Operation Main Street targets scams against small business | Federal Trade Commission",
+        "content": "In addition to ongoing litigation and recent settlements, the FTC filed a new case as part of Operation Main Street. The FTC has gone to court to challenge the conduct of nine U.S.- and Canada-based individuals and corporations operating as Premium Business Pages. (They also use the names Ameteck Gr"
+      },
+      {
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2018/06/ftc-bbb-law-enforcement-partners-announce-results-operation-main-street-stopping-small-business",
+        "title": "FTC, BBB, and Law Enforcement Partners Announce Results of ...",
+        "content": "### FTC\u2019s New Enforcement Action\n\nToday, the FTC announced the following new case as part of Operation Main Street:\n\nIn Premium Business Pages, the FTC charged nine individual and corporate defendants based in Canada and the United States with operating a common enterprise that, since at least 2013,"
+      },
+      {
+        "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/182-3011-x180033-9140-9201-quebec-inc-premium-business-pages-inc",
+        "title": "9140-9201 Qu\u00e9bec Inc. (Premium Business Pages Inc.) | Federal Trade Commission",
+        "content": "Federal Trade Commission, Plaintiff, v. 9140-9201 Qu\u00e9bec Inc., a Quebec corporation, also doing business as Ameteck Group, Marketing Midwest, Midwest Marketing, and Midwest Marketing Inc.; Midwest Advertising & Publishing Inc., a Quebec corporation, also doing business as Midwestern Advertising and "
+      }
+    ],
+    "detail": "first payment to this vendor; listing or renewal invoice. Memo: \"Annual business directory listing renewal\"\nEvidence from company records:\n- The memo \"Annual business directory listing renewal\" is a directory invoice, the format used by unsolicited fake-invoice schemes that bill businesses for services they never ordered.\n- There is no earlier payment or contract on record with Premium Business Pages.",
+    "search_version": 3
+  },
+  "Trademark Compliance Center": {
+    "risk": "High",
+    "reason": "The vendor \u201cTrademark Compliance Center\u201d has no prior payment or contract, and DOJ reports confirm that companies using this exact name were involved in a large trademark\u2011renewal scam, matching the fake\u2011invoice pattern seen in the memo.",
+    "rag_matches": [
+      "An invoice closely resembles a vendor's past legitimate invoices but has slightly altered payment or account details.",
+      "An invoice arrives for goods or services the company never actually ordered, hoping whoever pays bills assumes it's legitimate.",
+      "A new vendor has a generic, forgettable name paired with a domain that was registered only days or weeks ago."
+    ],
+    "sources": [
+      {
+        "url": "https://content.govdelivery.com/accounts/USPTO/bulletins/17b62f8",
+        "title": "USPTO Fights Fraudulent Trademark Solicitations",
+        "content": "Service to combat the problem.    The Department of Justice announced last week that two California men pled guilty in a mass-mailing scam that targeted owners of U.S. trademark applications. The men, Artashes Darbinyan and Orbel Hakobyan, admitted to stealing approximately $1.66 million from regist"
+      },
+      {
+        "url": "https://www.bairdholm.com/blog/dont-be-duped-by-trademark-scams-2",
+        "title": "Don't Be Duped By Trademark Scams | Baird Holm LLP",
+        "content": "In 2017, the USPTO announced its cooperation in a Department of Justice investigation into a trademark scam perpetrated by two California men who defrauded over 4,000 people of $1.66 million.  These individuals admitted to running their scam through companies called \u201cTrademark Compliance Center\u201d and"
+      },
+      {
+        "url": "https://www.webtm.com/howto/general/fraudulent-solicitations-scams",
+        "title": "Fraudulent Solicitations & Scams | Gordon E. R. Troy, PC",
+        "content": "DOJ: Guilty pleas in a $1.66 million mass-mailing scam involving companies calling themselves Trademark Compliance Center (TCC) and Trademark Compliance Office"
+      }
+    ],
+    "detail": "first payment to this vendor; listing or renewal invoice; awaiting approval, can still be stopped. Memo: \"Trademark registration renewal - notice TCC-20417\"\nEvidence from company records:\n- The memo \"Trademark registration renewal - notice TCC-20417\" is a trademark invoice, the format used by unsolicited fake-invoice schemes that bill businesses for services they never ordered.\n- There is no earlier payment or contract on record with Trademark Compliance Center.",
+    "search_version": 3
   }
 }

@@ -33,6 +33,9 @@ PRESSURE_WORDS = re.compile(
     r"\b(urgent|confidential|asap|immediately|wire today|per (?:ceo|cfo))\b", re.IGNORECASE
 )
 
+# Listing, renewal and registration invoices are the classic unsolicited fake-invoice scheme.
+SOLICITATION_WORDS = re.compile(r"\b(renewal|listing|directory|trademark|domain)\b", re.IGNORECASE)
+
 
 def _clean_memo(memo):
     # Drop bank error prefixes like "[INVALID_RECEIVING_ROUTING_NUMBER] ".
@@ -118,6 +121,14 @@ def flag_novel_vendors(transactions):
 
         if amount >= MIN_AMOUNT and memo.lower() in VAGUE_MEMOS:
             signals.append(_signal(f'vague memo: "{memo}"' if memo else "no memo"))
+
+        solicitation = SOLICITATION_WORDS.search(memo)
+        if solicitation:
+            signals.append(_signal(
+                "listing or renewal invoice",
+                "fake_invoice",
+                solicitation=solicitation.group(0).lower(),
+            ))
 
         pressure = PRESSURE_WORDS.search(memo)
         if pressure:

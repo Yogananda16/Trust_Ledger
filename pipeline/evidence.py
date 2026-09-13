@@ -139,6 +139,14 @@ def build_evidence(flag, transactions):
                     f"{TYPE_NAMES.get(flag['transaction_type'], 'payment')} ({flag['status']})."
                 )
 
+        elif "solicitation" in ctx:
+            lines.append(
+                f'The memo "{flag["clean_memo"]}" is a {ctx["solicitation"]} invoice, the format used by '
+                f"unsolicited fake-invoice schemes that bill businesses for services they never ordered."
+            )
+            if len(payments) == 1:
+                lines.append(f"There is no earlier payment or contract on record with {name}.")
+
         elif "average" in ctx:
             lines.append(
                 f"This payment is ${flag['amount_dollars']:,.2f}; the {_plural(ctx['previous_count'], 'earlier payment')} "

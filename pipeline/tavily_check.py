@@ -70,6 +70,35 @@ def check_vendor(vendor_name: str) -> list:
     return _links(about_vendor)
 
 
+def _source_rank(url):
+    # Government records first, then trusted outlets, then everything else.
+    host = urlparse(url).hostname or ""
+    if host.endswith(".gov"):
+        return 0
+    return 1 if _is_trusted(url) else 2
+
+
+def check_vendor_reputation(vendor_name: str) -> list:
+    """Search for scam reports, warnings or enforcement actions naming this exact vendor."""
+    core = _core_name(vendor_name)
+    try:
+        response = client.search(
+            query=f'"{core}" scam fraud FTC lawsuit complaint warning',
+            search_depth="advanced",
+            max_results=10,
+        )
+    except Exception as e:
+        print("Tavily error:", e)
+        return []
+    seen, kept = set(), []
+    for r in response["results"]:
+        names_vendor = re.search(rf"\b{re.escape(core)}\b", _plain(f"{r.get('title', '')} {r['content']}"))
+        if names_vendor and _normalize(r["url"]) not in seen:
+            seen.add(_normalize(r["url"]))
+            kept.append(r)
+    return _links(sorted(kept, key=lambda r: _source_rank(r["url"])))
+
+
 def _normalize(url):
     parsed = urlparse(url)
     return (parsed.hostname or "").removeprefix("www.") + parsed.path.rstrip("/").removesuffix("/amp")
