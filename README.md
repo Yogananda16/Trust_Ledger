@@ -48,6 +48,34 @@ flowchart LR
 
 Next.js · FastAPI · Groq · Tavily · Chroma · ElevenLabs · Rho API. Frontend on Vercel, backend on Hugging Face Spaces.
 
+## Project structure
+
+```
+Trust_Ledger/
+├── api.py                  # FastAPI backend: vendors, playbook, voice briefing
+├── Dockerfile              # Backend container (Hugging Face Spaces)
+├── requirements.txt        # Python dependencies
+├── deploy_space.py         # Deploys the backend to Hugging Face
+├── warm_cache.py           # Pre-computes risk verdicts
+├── pipeline/
+│   ├── novelty.py          # Detection rules
+│   ├── evidence.py         # Evidence from company records
+│   ├── tavily_check.py     # Live web verification (Tavily)
+│   ├── rag.py              # Fraud-pattern retrieval (Chroma)
+│   ├── verdict.py          # LLM risk verdict (Groq)
+│   └── voice.py            # Voice briefings (ElevenLabs)
+├── data/
+│   ├── transactions.json   # Rho transactions
+│   ├── vendors.json        # Vendor records
+│   ├── approvals.json      # Payment approvals
+│   ├── fraud_patterns.json # Fraud-pattern knowledge base
+│   └── playbook.json       # Fraud playbook content
+└── frontend/               # Next.js dashboard (Vercel)
+    └── app/
+        ├── page.tsx        # Vendors and fraud playbook pages
+        └── layout.tsx      # App layout
+```
+
 ## Run locally
 
 Create a `.env` with `GROQ_API_KEY`, `TAVILY_API_KEY` and `ELEVENLABS_API_KEY`, then:
