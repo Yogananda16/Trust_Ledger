@@ -4,6 +4,8 @@ Flags risky vendor payments and shows the evidence behind every flag. Built on R
 
 **Live app:** https://trust-ledger-ai.vercel.app
 
+**Demo video:** https://drive.google.com/file/d/1-RvjdkhMDpnAsMLlM5gGc6xEaksXNlQ-/view
+
 ## The problem
 
 Companies vet a vendor once, when it's added. Most payment fraud gets past that: changed bank details, reused invoices, look-alike vendors, pressured wires and insiders. Business email compromise alone cost US businesses $3.05B in 2025 (FBI IC3). Enterprise tools exist; a startup with just a bank account has nothing.
@@ -32,17 +34,6 @@ flowchart LR
     API --> UI[Next.js dashboard<br/>Vercel]
     API --> VOICE[ElevenLabs<br/>voice briefing]
 ```
-
-| Component | Role |
-|---|---|
-| `pipeline/novelty.py` | Detection rules on outgoing payments (ACH, wire, check) |
-| `pipeline/evidence.py` | Turns company records into plain-English facts |
-| `pipeline/tavily_check.py` | Exact-name vendor search and trusted-source pattern search |
-| `pipeline/rag.py` | Retrieves matching fraud patterns (FTC and FBI guidance) from Chroma |
-| `pipeline/verdict.py` | Groq LLM verdict with rate-limit pacing |
-| `pipeline/voice.py` | ElevenLabs spoken briefing |
-| `api.py` | FastAPI endpoints and verdict cache |
-| `frontend/` | Next.js dashboard: vendors, evidence, fraud playbook |
 
 ## Tech stack
 
@@ -90,5 +81,3 @@ cd frontend
 npm install
 npm run dev
 ```
-
-Open http://localhost:3000.
