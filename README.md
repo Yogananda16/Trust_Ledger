@@ -16,9 +16,37 @@ Companies vet a vendor once, when it's added. Most payment fraud gets past that:
 4. **Rate:** an LLM combines the evidence and matched fraud patterns (RAG) into a Low, Medium or High verdict with a reason.
 5. **Alert:** a spoken briefing via ElevenLabs.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    RHO[Rho API<br/>transactions] --> RULES[Detection rules]
+    REC[Company records<br/>vendors · approvals · bank changes] --> EVID[Record evidence]
+    RULES --> EVID
+    RULES --> TAV[Tavily<br/>vendor + pattern search]
+    RULES --> RAG[Chroma RAG<br/>fraud patterns]
+    EVID --> LLM[Groq LLM<br/>risk verdict]
+    TAV --> LLM
+    RAG --> LLM
+    LLM --> API[FastAPI<br/>Hugging Face Spaces]
+    API --> UI[Next.js dashboard<br/>Vercel]
+    API --> VOICE[ElevenLabs<br/>voice briefing]
+```
+
+| Component | Role |
+|---|---|
+| `pipeline/novelty.py` | Detection rules on outgoing payments (ACH, wire, check) |
+| `pipeline/evidence.py` | Turns company records into plain-English facts |
+| `pipeline/tavily_check.py` | Exact-name vendor search and trusted-source pattern search |
+| `pipeline/rag.py` | Retrieves matching fraud patterns (FTC and FBI guidance) from Chroma |
+| `pipeline/verdict.py` | Groq LLM verdict with rate-limit pacing |
+| `pipeline/voice.py` | ElevenLabs spoken briefing |
+| `api.py` | FastAPI endpoints and verdict cache |
+| `frontend/` | Next.js dashboard: vendors, evidence, fraud playbook |
+
 ## Tech stack
 
-Next.js · FastAPI · Groq · Tavily · Chroma · ElevenLabs · Rho sandbox API. Frontend on Vercel, backend on Hugging Face Spaces.
+Next.js · FastAPI · Groq · Tavily · Chroma · ElevenLabs · Rho API. Frontend on Vercel, backend on Hugging Face Spaces.
 
 ## Run locally
 
@@ -36,5 +64,3 @@ npm run dev
 ```
 
 Open http://localhost:3000.
-
-Full details (architecture, rules, data, deployment): [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md)
