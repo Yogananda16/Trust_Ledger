@@ -38,7 +38,7 @@ flowchart LR
 
 ## Tech stack
 
-Next.js · FastAPI · Groq · Tavily · Chroma · ElevenLabs · Rho API. Frontend on Vercel, backend on Hugging Face Spaces.
+Next.js · RAG · FastAPI · Groq · Tavily · Chroma · ElevenLabs · Rho API. Frontend on Vercel, backend on Hugging Face Spaces.
 
 ## Project structure
 
