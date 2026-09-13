@@ -18,6 +18,25 @@ def get_verdict(vendor_name: str, detail: str, tavily_findings: list = None) -> 
 Vendor: {vendor_name}
 Transaction detail: {detail}
 
+Assess risk using both the evidence below and the payment amount.
+
+A first-time payment is normal — companies hire new vendors constantly.
+Treat it as a reason to verify, not as proof of fraud.
+
+Guidance on tiers:
+- High: real corroborating red flags — no findable business, a domain
+  registered within months, complaints or scam reports, or a name closely
+  mimicking an established company.
+- Medium: the vendor is plausible but unverified — thin or ambiguous web
+  presence, generic company name, or a large first-time payment (over
+  $5,000) where a mistake would be costly to recover.
+- Low: the vendor is clearly an established, findable business with no
+  concerning signals, or the amount is small enough that the downside is
+  limited.
+
+Do not return Low purely because nothing negative was found — absence of
+evidence at a large amount is itself a reason for Medium.
+
 Known fraud patterns that may apply:
 {chr(10).join(f"- {p}" for p in rag_matches)}
 

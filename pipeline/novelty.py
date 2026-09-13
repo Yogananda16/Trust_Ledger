@@ -1,11 +1,18 @@
 from collections import defaultdict
 
-OUTGOING_TYPES = {"card_debit", "ach_debit", "wire_debit"}
+# Vendor bill payments — where the fraud research says impersonation happens.
+# Card swipes (card_debit) are employee purchases, not vendor invoicing,
+# so they're deliberately excluded.
+OUTGOING_TYPES = {"ach_debit", "wire_debit"}
+
+# Below this, a first-time vendor isn't worth a founder's attention.
+MIN_AMOUNT = 500
 
 
 def flag_novel_vendors(transactions):
     outgoing = [t for t in transactions if t["transaction_type"] in OUTGOING_TYPES]
     outgoing.sort(key=lambda t: t.get("posted_at") or t.get("initiated_at") or "")
+
     history = defaultdict(list)
     flagged = []
 
@@ -14,8 +21,10 @@ def flag_novel_vendors(transactions):
         amount = abs(t["amount"]["amount"]) / 100
         past = history[name]
 
-        is_novel = len(past) == 0
-        is_outlier = bool(past) and amount > (sum(past) / len(past)) * 2
+        is_novel = len(past) == 0 and amount >= MIN_AMOUNT
+        is_outlier = (
+            bool(past) and amount > (sum(past) / len(past)) * 2 and amount >= MIN_AMOUNT
+        )
 
         if is_novel or is_outlier:
             reason = (
