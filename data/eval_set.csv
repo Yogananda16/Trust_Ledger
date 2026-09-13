@@ -1,0 +1,21 @@
+vendor_name,detail,ground_truth
+Northstar Office Supply,"recurring vendor, 6th payment, $180",Low
+Brightstone Consulting LLC,"recurring vendor, monthly retainer $2500",Low
+Riverside Community College,"recurring tuition reimbursement payment",Low
+Zurich Airport Services,"recurring travel vendor, quarterly payment",Low
+Wellstone Media LLC,"recurring vendor, marketing services $1200",Low
+Crescent Property Group,"recurring rent payment, monthly",Low
+Everline Creative Studio,"recurring design services, $800",Low
+Meridian Travel Inc.,"recurring corporate travel booking",Low
+Civic Affairs Inc.,"recurring compliance consulting, quarterly",Low
+Guangzhou Harbor Apparel Co. Ltd.,"recurring supplier, established 3 years",Low
+Swift Global Logistics LLC,"first ACH payment $4800, domain registered 12 days ago, no business registration found",High
+Prime Vendor Solutions LLC,"first payment, generic name, requested payment via wire transfer only",High
+Apex Business Services Inc,"sudden bank detail change request from long-time vendor",High
+Northeast Consulting Group,"first-time vendor, invoice for services never ordered, urgent payment demanded",High
+Global Tech Partners LLC,"name nearly identical to established real company, newly registered domain",High
+QuickPay Vendor Corp,"first payment, requested gift cards as payment method",High
+United Business Solutions,"invoice with pressure to bypass approval process, first-time vendor",High
+Elite Office Supplies Direct,"no findable business registration, first large payment",High
+National Compliance Services,"impersonating government licensing authority, threatening fines",High
+Reliable Freight Partners LLC,"vendor overpaid then requested refund of difference via check",High
