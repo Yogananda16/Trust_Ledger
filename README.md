@@ -1,6 +1,7 @@
 # TrustLedger
 
-Flags risky vendor payments and shows the evidence behind every flag. Built on Rho's transaction API for the LOCK IN Hack (Rho, Sep 12-13 2026).
+AI agent for startups and small businesses that detects suspicious vendors and payments before the money is sent. 
+It verifies vendors using transaction history, scam patterns, and live web data, then explains exactly why a payment may be risky.
 
 **Live app:** https://trust-ledger-ai.vercel.app
 
@@ -37,7 +38,7 @@ flowchart LR
 
 ## Tech stack
 
-Next.js · FastAPI · Groq · Tavily · Chroma · ElevenLabs · Rho API. Frontend on Vercel, backend on Hugging Face Spaces.
+Next.js · RAG · FastAPI · Groq · Tavily · Chroma · ElevenLabs · Rho Sandbox API. Frontend on Vercel, backend on Hugging Face Spaces.
 
 ## Project structure
 
